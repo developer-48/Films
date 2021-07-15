@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/fon6.jpg) repeat fixed;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.wrap{
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    margin:30px auto;
+    background-color: #2a3040;
+    height: 60px;
+    border-radius: 15px;
+    padding:5px 10px;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    line-height: 50px;
+    overflow-x: auto;
+}
+
+.filmsCategory{
+    font-size: 20px;
+    cursor: pointer;
+    margin:0 5px;
+    padding: 0 5px;
+}
+
+.content{
+    background-color: #2a3040;
+    min-height: 74vh;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.categoryTitle{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px solid antiquewhite;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+
+.filmList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 88%;
+    padding: 20px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.film{
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.filmImg{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    background-color: #808080;
+    border: 3px solid #414e53;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.filmName{
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.filmListTwo{
+    display: block;
+    height: 100%;
+    padding-top: 0;
+}
+
+.filmNameTitle{
+    font-size: 35px;
+    font-weight: 500;
+    height: 55px;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.filmListTwo .film{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filmListTwo .filmImg{
+    width: 200px;
+    height: 250px;
+    margin-right: 120px;
+}
+
+.filmDescription{
+    padding-top: 20px;
+}
+
+.filmListTwo .film p{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.filmDescriptionText{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.descFilmName{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.videoplayer{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.videoplayer video{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
+.commentsBlock{
+    margin: auto;
+    width: 80%;
+    padding: 20px 0;
+}
+
+.commentTitle{
+    font-size: 22px;
+    font-weight: 600;
+    margin:20px;
+    cursor: pointer;
+}
+
+.commentContainer{
+    margin-bottom: 40px;
+    padding: 20px 10px;
+    border-top: 2px solid #696666;
+    border-bottom: 2px solid #696666;
+}
+
+.commentsList{
+    /* max-height: 1000px; */
+    /* overflow-y: scroll; */
+    padding: 0 10px;
+}
+
+.commentsList::-webkit-scrollbar {
+    width: 0; 
+}
+
+.commentsListElem{
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px 15px 15px 15px;
+    border: 2px solid #696666;
+    margin-bottom: 25px;
+    color: rgb(51, 49, 49);
+    width: auto;
+}
+
+.commentsListTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.commentName{
+    font-weight: 500;
+}
+
+.commentsList p{
+    display: block;
+    margin: 0;
+}
+
+.commentsText{
+    margin-left: 8px !important;
+}
+
+.commentStarTitle{
+    margin-top: 10px !important;
+    margin-left: 8px !important;
+}
+
+.AddCommentBlock{
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.addCommError{
+    color: #a02929;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.addCommName{
+    display: block;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #696666;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(51, 49, 49);
+    margin-bottom: 16px;
+}
+
+.addCommText{
+    display: block;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #696666;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: rgb(51, 49, 49);
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.addCommName::placeholder, .addCommText::placeholder{
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.starsBlock{
+    display: flex;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.starsBlockTitle{
+    margin-right: 15px;
+    line-height: 28px;
+}
+
+.AddCommStarsSel{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.AddCommStarsSel div{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid rgb(65, 78, 83);
+    color: #414e53;
+    text-align: center;
+    line-height: 28px;
+    background-color: #fddddd;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.AddCommStarsSel div:hover{
+    background-color: #6ab34d;
+    transition: 0.5;
+}
+
+.CommStarsActive{
+    background-color: #6ab34d !important;
+}
+
+.postCommBtn{
+    width: 150px;
+    height: 35px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #414e53;
+    border: 2px solid #696666;
+    border-radius: 8px;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.postCommBtn:hover{
+    transform: scale(1.1);
+    transition: 0.5;
+}
